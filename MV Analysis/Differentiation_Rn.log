@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.11.25)  26 NOV 2024 15:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.11.25)  26 NOV 2024 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -201,7 +201,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
-[2] [3] (Differentiation_Rn.aux)
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+[3] (Differentiation_Rn.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -214,7 +224,7 @@ Here is how much of TeX's memory you used:
  24424 multiletter control sequences out of 15000+600000
  565937 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,235b,205s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,306b,205s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\sergi.boquera\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Pr
@@ -226,7 +236,7 @@ cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/font
 s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Differentiation_Rn.pdf (3 pages, 134497 bytes).
+Output written on Differentiation_Rn.pdf (3 pages, 137263 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
