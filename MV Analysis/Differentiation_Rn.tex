@@ -1,0 +1,131 @@
+\documentclass[12pt, letterpaper]{article}
+\title{Differentiation on $R^n$}
+\author{Sergi Boquera}
+\date{November 2024}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}{Corollary}
+
+
+\begin{document}
+	\maketitle
+	
+	
+	
+	
+	\section{Single variable derivative}
+	
+	\begin{definition}
+		Let A be a subset of R; Let 
+		\[ \phi'(a) = \lim_{t\to0} \frac{\phi(a+t) - \phi(a)}{t} \]
+		
+		provided the limit exists, we say that $\phi$ is differentiable at a.
+	\end{definition}
+	
+	 The following facts are inmediat consequence:
+	\begin{itemize}
+		\item Differentiable functions are continuous.
+		\item Composites of differentiable functions are differentiable.
+	\end{itemize}
+	We seek to define the derivativo of a function $f$ mapping a subset of $R^m$ into $R^n$ which preserves the properties that we have previously mentioned.\newline
+	
+	
+	
+	
+	\section{Multivariable differentiation}
+	
+		\begin{definition}
+			Let $A \in R^m$; lef $f: A \to R^n $. Suppose A contains a neighbourhood of a. Given $u \in R^m$ with $u \ne 0$, define
+				\[f'(a;u) = \lim_{t \to 0}\frac{f(a+tu)-f(a)}{t}\]
+			provided the limit exists. This limit is called \textbf{directional derivative} of $f$ at $a$ with respecto to the vector $u$.\newline
+		\end{definition}
+		
+	
+		\begin{definition}
+			Let $A \in R^m$, let $f: A \to R^n$. Suppose A contains a nighborhood of a. We say that $f$ is \textbf{differentiable at a} if there is a n by m matrix B such that
+				\[ \lim_{h \to 0} \frac{f(a+h) - f(a) - Bh}{||h||} = 0\]
+			The matrix B, whisch is unique, is called the derivative of f at a; it is denoted $Df(a)$.\newline
+		\end{definition}
+		
+		Next, we will prove the following facts about differentiable functions:
+		\begin{itemize}
+			\item Differentiable functions are continuous.
+			\item Composites of differentiable functions are differentiable.
+			\item Differentiablilty of $f$ at a implies the existence of all the directional derivatives of f at a.\newline
+		\end{itemize}
+		
+		
+		\begin{theorem}
+			Let $A \in R^m$; let $f: A \to R^n$. If f is differentiable at a, then all directional derivatives of $f$ at a exist, and
+				\[f'(a;u) = Df(a) \cdot u\].
+		\end{theorem}
+		\begin{proof}
+			Let $B = Df(a)$. Set $h = tu$ in the definition of differentiability, where $t \ne 0$. Then by hypothesis,
+			
+				
+				\[^* \lim_{t \to 0} \frac{f(a+tu) - f(a) - Btu}{||tu||} = \lim_{t \to 0} \frac{f(a+tu) - f(a)  - tBu}{|t|\cdot||u||} = 0\]
+				
+			If $t \to 0$ through positive values, we multiply * by $||u||$ to conclude that
+				\[ \lim_{t \to 0} \frac{f(a+tu) - f(a)}{t} - Bu = 0\]
+			as $t \to 0$ as desired.
+			If t approaches 0 through negative values, we multiply (*) by $-||u||$ to reach the same conclusion.\newline
+		\end{proof}		
+		
+		
+		\begin{theorem}
+			Let $A \in R^m$; let $f:A \to R^n$. If $f$ is differentiable at a, then $f$ is continuous at a.
+		\end{theorem}
+		\begin{proof}
+			Let $B = Df(a)$. For h near 0, write\newline 
+				\[ f(a+h) - f(a) = ||h||\cdot\left[ \frac{f(a+h) - f(a) - B\cdot||h||}{||h||}\right] - B||h||\]
+			By hypothesis, the expression in brackets approaches 0 as h approaches 0.
+			Then 
+				\[\lim_{h\to0}\left[f(a+h) - f(a)\right] = 0\]
+		\end{proof}
+		
+		
+		
+		We now center our attention to the concept of partial derivatives.
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+\end{document}

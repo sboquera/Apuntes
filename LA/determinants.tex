@@ -1,0 +1,72 @@
+\documentclass[12pt, letterpaper]{article}
+\title{Determinant functions}
+\author{Sergi Boquera}
+\date{November 2024}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}{Corollary}
+
+
+\begin{document}
+	\maketitle
+	
+	\section{Determinant funcitions}
+	In this section, we will dive deep into the concept of determinant functions and its applications. 
+	First, we will start with some simple definitions.
+	
+	
+		%SUBSECTION INITIAL DEFINITIONS	%
+		\subsection{The concept of determinant function}
+		
+			We begin this section introducing the concept of determinant function and the basic related definitions.
+			
+			\begin{definition}
+				Let F be a field, n a positive integer and D, a function that assigns to each $nxn$ matrix A over F a scalar D(A) over F.
+				We say that D is n-linear if for each $1 \le i \le n$, D is linear function of the i-th row when the other (n-1) rows are held fix.
+			\end{definition}
+			
+			\begin{definition}
+				Let D be a n-linear function. We say that D is alternating if the following two conditions are satisfied:
+				\begin{itemize}
+					\item $D(A) = 0$, whenever two rows of A are equal.
+					\item  if A' is a matrix obtained from A by interchanging two rows of A, then $D(A') = -D(A)$.
+				\end{itemize}
+			\end{definition}
+			\begin{definition}
+				Let F be a field and let n be a positive integer. Suppose D is a function from $nxn$ matrices over F into F. We say that D is a determinant function if D is n-linear, alternating and D(I) = 1.
+			\end{definition}
+		
+		%SUBSECTION BASIC THEOREMS%
+		\subsection{Facts about the determinant function}
+			We are now on position to prove the basic properties of determinant functions.
+			
+			\begin{lemma}
+				A linear combination of n-linear functions is n-linear.
+			\end{lemma}
+			\textit{proof.} It suffices to show that the linear combination of two n-linear functions is n-linear. Let D and E be n-linar functions, $a, b \in F$ and G = $(aD + bE)(A).
+			\newline Notice  that $G = aD(A) + bE(A)$ $ hence if we held fix all rows of A except $\alpha_{i}$, $(aD + bE)(\alpha_{i} + \alpha) = aD(\alpha_{i} + \alpha) + bE(\alpha_{i} + \alpha) = aD(\alpha_{i}) + aD(\alpha) + bE(\alpha_{i}) + bE(\alpha) =  $  which proves that G is n-linear.
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+
+\end{document}
